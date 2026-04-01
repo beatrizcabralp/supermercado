@@ -1,4 +1,4 @@
-public class Produto {
+public abstract class Produto {
 
     protected String nome;
     protected int codigoBarras;
@@ -11,4 +11,12 @@ public class Produto {
         this.precoBase = precoBase;
         this.fornecedor = fornecedor;
     }
+
+    public abstract double calcularPrecoFinal();
+
+    public void exibirResumo() {
+        System.out.println("Produto: " + nome);
+        System.out.println("Preço Base: " + precoBase);
+    }
+
 }
