@@ -1,6 +1,6 @@
 public class filha extends Produto {
 
-    private double taxa; // porcentagem
+    private double taxa;
 
     public filha(String nome, int codigoBarras, double precoBase, fornecedor fornecedor, double taxa) {
         super(nome, codigoBarras, precoBase, fornecedor);
